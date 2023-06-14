@@ -29,7 +29,15 @@ if st.button("Submit"):
         model=MODEL,
         prompt=prompt,
         max_tokens=1000,
-        temperature=0
+        temperature=0,
+        stream=True
     )
 
-    st.markdown(response.choices[0].text)
+    with st.empty():
+        collected_events = []
+        completion_text = ''
+        for event in response:
+            collected_events.append(event)
+            event_text = event['choices'][0]['text']
+            completion_text += event_text
+            st.write(completion_text)
