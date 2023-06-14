@@ -22,7 +22,7 @@ if st.button("Submit"):
             Translate the following statement into the {} langauge. \
             Add two additional options in the input language with English translations. \
             Add two common responses in the input with English translations. \
-            Add short paragraph in English explaining the translation, to aid in understanding. \
+            Add short paragraph in English adding context, to aid in understanding. \
             Statement: {}".format(language, language, input_phrase)
 
     response=openai.Completion.create(
