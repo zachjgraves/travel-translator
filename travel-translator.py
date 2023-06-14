@@ -18,9 +18,8 @@ if language=="Custom":
     language=st.text_input("Input Language")
 
 if st.button("Submit"):
-    prompt="Format the response in markdown. \
-            Translate the following statement into the {} langauge. \
-            Add two additional in the input language with English translations. \
+    prompt="Translate the following statement into the {} langauge. \
+            Add two additional options in the input language with English translations. \
             Add two common responses in the input with English translations. \
             Add short paragraph in English explaining the translation, to aid in understanding. \
             Statement: {}".format(language, input_phrase)
