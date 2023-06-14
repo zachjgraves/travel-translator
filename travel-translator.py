@@ -18,12 +18,12 @@ if language=="Custom":
     language=st.text_input("Input Language")
 
 if st.button("Submit"):
-    prompt="Act as a helpful translation assistant, translating from English into {}\
+    prompt="Act as a helpful Enlgish speaking translation assistant\
             Translate the following statement into the {} langauge. \
             Add two additional options in the input language with English translations. \
             Add two common responses in the input with English translations. \
             Add short paragraph in English adding context, to aid in understanding. \
-            Statement: {}".format(language, language, input_phrase)
+            Statement: {}".format(language, input_phrase)
 
     response=openai.Completion.create(
         model=MODEL,
