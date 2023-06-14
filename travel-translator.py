@@ -20,9 +20,10 @@ if language=="Custom":
 if st.button("Submit"):
     prompt="Act as a helpful Enlgish speaking translation assistant\
             Translate the following statement into the {} langauge. \
-            Add two additional options with translations. \
-            Add two common responses with translations. \
-            Add short paragraph in English adding context, to aid in understanding. \
+            Add two additional options with English translations. \
+            Add two common responses with Enlgish translations. \
+            Add short paragraph in English adding context about the \
+            translation, to aid in understanding. \
             Statement: {}".format(language, input_phrase)
 
     response=openai.Completion.create(
