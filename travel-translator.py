@@ -48,4 +48,4 @@ if st.button("Submit"):
             collected_events.append(event)
             event_text = event['choices'][0]['text']
             completion_text += event_text
-            st.caption(completion_text)
+            st.write(completion_text)
