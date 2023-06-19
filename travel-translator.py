@@ -12,7 +12,7 @@ st.subheader("A Language Guide")
 input_phrase=st.text_area("What do you want to say?")
 
 language=st.selectbox("Select Language", ["Spanish", "French", \
-    "Italian", "Chinese", "Japonese", "Custom"])
+    "Italian", "Chinese", "Custom"])
 
 if language=="Custom":
     language=st.text_input("Input Language")
