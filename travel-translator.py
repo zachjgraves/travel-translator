@@ -18,12 +18,19 @@ if language=="Custom":
     language=st.text_input("Input Language")
 
 if st.button("Submit"):
-    prompt="Act as a helpful Enlgish speaking translation assistant\
-            Translate the following statement into the {} langauge. \
-            Add two additional options with English translations. \
-            Add two common responses with Enlgish translations. \
-            Add short paragraph in English adding context about the \
+    prompt="Act as a helpful translation assistant\
+            Translate the following statement. \
+            Add two additional options with translations. \
+            Add two common responses with translations. \
+            Add short paragraph adding context about the \
             translation, to aid in understanding. \
+            Example input: 'Can I buy a coffee?'\n\
+            Example output: \n\
+            Translation: ¿Puedo comprar un café? \n\
+            Or try: ¿Puedo obtener un café? - Can I get a coffee? \n\
+            Another Option: ¿Puedo tomar un café? - Can I have a coffee? \n\
+            Common Responses: Sí, por supuesto. - Yes, of course. \n\
+            Common Response 2: Lo siento, estamos cerrados. - Sorry, we're closed. \n\
             Statement: {}".format(language, input_phrase)
 
     response=openai.Completion.create(
