@@ -18,7 +18,8 @@ if language=="Custom":
     language=st.text_input("Input Language")
 
 if st.button("Submit"):
-    prompt="Act as a helpful translation assistant\
+    prompt="Act as a helpful translation assistant.\
+            Format response in markdown headers.\
             Translate the following statement into {}. \
             Add two additional options with translations. \
             Add two common responses with translations. \
