@@ -36,7 +36,7 @@ if st.button("Submit"):
     response=openai.Completion.create(
         model=MODEL,
         prompt=prompt,
-        max_tokens=1000,
+        max_tokens=2000,
         temperature=0,
         stream=True
     )
