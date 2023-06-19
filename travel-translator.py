@@ -19,7 +19,7 @@ if language=="Custom":
 
 if st.button("Submit"):
     prompt="Act as a helpful translation assistant\
-            Translate the following statement. \
+            Translate the following statement into {}. \
             Add two additional options with translations. \
             Add two common responses with translations. \
             Add short paragraph adding context about the \
