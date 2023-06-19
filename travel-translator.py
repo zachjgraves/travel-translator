@@ -38,7 +38,7 @@ if st.button("Submit"):
         model=MODEL,
         prompt=prompt,
         max_tokens=2000,
-        temperature=0.3,
+        temperature=0.4,
         stream=True
     )
 
