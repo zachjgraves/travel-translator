@@ -19,7 +19,7 @@ if language=="Custom":
 
 if st.button("Submit"):
     prompt="Act as a helpful translation assistant.\
-            Format response in markdown headers.\
+            Format response in markdown headers H2.\
             Translate the following statement into {}. \
             Add two additional options with translations. \
             Add two common responses with translations. \
@@ -38,7 +38,7 @@ if st.button("Submit"):
         model=MODEL,
         prompt=prompt,
         max_tokens=2000,
-        temperature=0,
+        temperature=0.3,
         stream=True
     )
 
