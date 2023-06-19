@@ -20,19 +20,19 @@ if language=="Custom":
 if st.button("Submit"):
     prompt="Act as a helpful translation assistant.\
             Format response in markdown headers H2.\
-            Translate the following statement into {}. \
+            Translate the following statement into the provided language. \
             Add two additional options with translations. \
             Add two common responses with translations. \
             Add short paragraph adding context about the \
             translation, to aid in understanding. \
-            Example input: 'Can I buy a coffee?'\n\
+            Example input: 'Spanish ; Can I buy a coffee?'\n\
             Example output: \n\
             Translation: ¿Puedo comprar un café? \n\
             Or try: ¿Puedo obtener un café? - Can I get a coffee? \n\
             Another Option: ¿Puedo tomar un café? - Can I have a coffee? \n\
             Common Responses: Sí, por supuesto. - Yes, of course. \n\
             Common Response 2: Lo siento, estamos cerrados. - Sorry, we're closed. \n\
-            Statement: {}".format(language, input_phrase)
+            Statement: {} ; {}".format(language, input_phrase)
 
     response=openai.Completion.create(
         model=MODEL,
