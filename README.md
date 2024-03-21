@@ -32,3 +32,8 @@ Common Responses:
 
 
 This application leverages OpenAI's powerful text-davinci-003 model to provide accurate translations and common responses, making it a convenient tool for travelers or language enthusiasts.
+
+
+https://github.com/zachjgraves/travel-translator/assets/127673423/41755f59-58da-4a28-922c-cdc5542a227a
+
+
