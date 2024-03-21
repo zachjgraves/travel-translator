@@ -17,6 +17,7 @@ This application acts as a helpful translation assistant, enabling users to tran
 6. **Additional Context:** Along with translations, the application provides a short paragraph adding context about the translation, aiding users in understanding the nuances of the translated phrases.
 
 ##Example
+
 Input: "Spanish ; Can I buy a coffee?"
 Output:
 Translation: "¿Puedo comprar un café?"
